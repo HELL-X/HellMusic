@@ -67,7 +67,7 @@ async def hell_startup():
     LOGGER.info(
         "\n\n\u250f\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2513\n\u2523\u2605\x20\x46\x41\x4c\x4c\x45\x4e\x20\x4d\x55\x53\x49\x43\x20\x42\x4f\x54\x20\u2605\n\u2517\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u251b"
     )
-    global BOT_ID, BOT_NAME, BOT_USERNAME, BOT_MENTION, helldb
+    global BOT_ID, BOT_NAME, BOT_USERNAME, BOT_MENTION, HELLDB
     global ASS_ID, ASS_NAME, ASS_USERNAME, ASS_MENTION, SUDOERS
 
     await app.start()
@@ -97,7 +97,7 @@ async def hell_startup():
     except:
         pass
 
-    ANON = "\x31\x33\x35\x36\x34\x36\x39\x30\x37\x35"
+    HELL = "\x31\x33\x35\x36\x34\x36\x39\x30\x37\x35"
     for SUDOER in config.SUDO_USERS:
         SUDOERS.add(SUDOER)
     if config.OWNER_ID not in config.SUDO_USERS:
